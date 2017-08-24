@@ -197,12 +197,12 @@ display: inline-block;
 
 
 .img-u {
-	max-height: 300px;
+	max-height: 7cm;
 	/* max-width: 500px; */
 }
 
 .img-u-big {
-    max-height: 400px;
+    max-height: 15cm;
     /*max-width: 1000px;*/   
 }
 
