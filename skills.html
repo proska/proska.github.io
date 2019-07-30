@@ -32,7 +32,7 @@
 <div class="super_container">
     
     <!-- Header -->
-    <header class="header" , id="main_header">
+    <header class="header" id="main_header">
         <script>
             populate_header()
         </script>
@@ -41,9 +41,8 @@
     <div class="content_container">
         <div class="main_content_outer d-flex flex-xl-row flex-column align-items-start justify-content-start">
 			
-	
 			<!-- General Information -->
-            <div class="general_info d-flex flex-xl-column flex-md-row flex-column" , id="general_information">
+            <div class="general_info d-flex flex-xl-column flex-md-row flex-column" id="general_information">
                 <script>
                     populate_general_info();
                 </script>
@@ -56,21 +55,13 @@
                     <div class="main_subtitle">What I am good at</div>
                     <div class="main_title">My Skills</div>
                 </div>
-	
-<!--				<div class="skills_text">-->
-<!--					<div class="container-fluid">-->
-<!--						<div class="row">-->
-<!--							This is a text-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
             	   
                 <div class="main_content_scroll mCustomScrollbar" data-mcs-theme="minimal-dark">
 					
                     <div class="skills">
-						<p> </p>
                         <!-- Progress Bars -->
                         <div class="progress_bars">
+							<!-- ################################################################################## -->
 							<!-- Programming Skills Content -->
 							<hr style="height:2px;border:none;color:#333;background-color:#333;">
 							<div class="main_subtitle">Programming Languages</div>
@@ -200,7 +191,8 @@
                                 
                                 </div>
                             </div>
-                            
+							<!-- ################################################################################## -->
+							<hr style="height:2px;border:none;color:#333;background-color:#333;">
                             <!-- Prepare a container for your calendar. -->
                             <div class="calendar">
                                 <!-- Loading stuff -->
@@ -211,226 +203,256 @@
                                     GitHubCalendar(".calendar", "proska", {responsive: true});
                                 </script>
                             </div>
-                        
-                        </div>
 	
-						<!-- Machine Learning Skills Content -->
-                        <hr style="height:2px;border:none;color:#333;background-color:#333;">
-                        <div class="main_subtitle">Machine Learning & Data Science Libraries</div>
-                        <br>
-                        <div class="container-fluid">
-                            <div class="row">
-                                
-                                <!-- Progress Bar -->
-                                <div class="col-xl-4 col-lg-6 pb_col">
-                                    <div class="pb_item">
-                                        <div class="p_bar_title">Tensorflow</div>
-                                        <div id="ML_1_pbar" class="skill_bars" data-perc=".99"
-                                             data-name="ML_1_pbar" data-color-start="#79ccff"
-                                             data-color-end="#9b74ff"></div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Progress Bar -->
-                                <div class="col-xl-4 col-lg-6 pb_col">
-                                    <div class="pb_item">
-                                        <div class="p_bar_title">Pytorch</div>
-                                        <div id="ML_2_pbar" class="skill_bars" data-perc="0.85"
-                                             data-name="ML_2_pbar" data-color-start="#ff4646"
-                                             data-color-end="#ff26d9"></div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Progress Bar -->
-                                <div class="col-xl-4 col-lg-6 pb_col">
-                                    <div class="pb_item">
-                                        <div class="p_bar_title">Keras</div>
-                                        <div id="ML_3_pbar" class="skill_bars" data-perc="0.90"
-                                             data-name="ML_3_pbar" data-color-start="#0054ff"
-                                             data-color-end="#ff23d3"></div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Progress Bar -->
-                                <div class="col-xl-4 col-lg-6 pb_col">
-                                    <div class="pb_item">
-                                        <div class="p_bar_title">Nltk</div>
-                                        <div id="ML_4_pbar" class="skill_bars" data-perc="0.80"
-                                             data-name="ML_4_pbar" data-color-start="#79ff7c"
-                                             data-color-end="#ffbd4a"></div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Progress Bar -->
-                                <div class="col-xl-4 col-lg-6 pb_col">
-                                    <div class="pb_item">
-                                        <div class="p_bar_title">OpenGL</div>
-                                        <div id="ML_5_pbar" class="skill_bars" data-perc="0.75"
-                                             data-name="ML_5_pbar" data-color-start="#79ff8f"
-                                             data-color-end="#7b74ff"></div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Progress Bar -->
-                                <div class="col-xl-4 col-lg-6 pb_col">
-                                    <div class="pb_item">
-                                        <div class="p_bar_title">scikit-learn</div>
-                                        <div id="ML_6_pbar" class="skill_bars" data-perc="0.99"
-                                             data-name="ML_6_pbar" data-color-start="#ff2d72"
-                                             data-color-end="#ffab79"></div>
-                                    </div>
-                                </div>
-                            
-                            </div>
-                        </div>
-	
-						<!-- Big Data Skills Content -->
-						<hr style="height:2px;border:none;color:#333;background-color:#333;">
-						<div class="main_subtitle">Big Data</div>
-						<br>
-						<div class="container-fluid">
-							<div class="row">
+							<!-- ################################################################################## -->
+							<!-- Machine Learning Skills Content -->
+							<hr style="height:2px;border:none;color:#333;background-color:#333;">
+							<div class="main_subtitle">Machine Learning & Data Science Libraries</div>
+							<br>
+							<div class="container-fluid">
+								<div class="row">
 			
-								<!-- Progress Bar -->
-								<div class="col-xl-4 col-lg-6 pb_col">
-									<div class="pb_item">
-										<div class="p_bar_title">Spark(ML, X, SQL)</div>
-										<div id="BD_1_pbar" class="skill_bars" data-perc=".85"
-											 data-name="BD_1_pbar" data-color-start="#79ccff"
-											 data-color-end="#9b74ff"></div>
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">Tensorflow</div>
+											<div id="ML_1_pbar" class="skill_bars" data-perc=".99"
+												 data-name="ML_1_pbar" data-color-start="#79ccff"
+												 data-color-end="#9b74ff"></div>
+										</div>
 									</div>
-								</div>
 			
-								<!-- Progress Bar -->
-								<div class="col-xl-4 col-lg-6 pb_col">
-									<div class="pb_item">
-										<div class="p_bar_title">Apache (Hadoop, Hive, Arrow, Tez, Ray, Parquet)</div>
-										<div id="BD_2_pbar" class="skill_bars" data-perc="0.75"
-											 data-name="BD_2_pbar" data-color-start="#ff4646"
-											 data-color-end="#ff26d9"></div>
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">Pytorch</div>
+											<div id="ML_2_pbar" class="skill_bars" data-perc="0.85"
+												 data-name="ML_2_pbar" data-color-start="#ff4646"
+												 data-color-end="#ff26d9"></div>
+										</div>
+									</div>
+			
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">Keras</div>
+											<div id="ML_3_pbar" class="skill_bars" data-perc="0.90"
+												 data-name="ML_3_pbar" data-color-start="#0054ff"
+												 data-color-end="#ff23d3"></div>
+										</div>
+									</div>
+			
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">Nltk</div>
+											<div id="ML_4_pbar" class="skill_bars" data-perc="0.80"
+												 data-name="ML_4_pbar" data-color-start="#79ff7c"
+												 data-color-end="#ffbd4a"></div>
+										</div>
+									</div>
+			
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">OpenGL</div>
+											<div id="ML_5_pbar" class="skill_bars" data-perc="0.75"
+												 data-name="ML_5_pbar" data-color-start="#79ff8f"
+												 data-color-end="#7b74ff"></div>
+										</div>
+									</div>
+			
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">scikit-learn</div>
+											<div id="ML_6_pbar" class="skill_bars" data-perc="0.99"
+												 data-name="ML_6_pbar" data-color-start="#ff2d72"
+												 data-color-end="#ffab79"></div>
+										</div>
+									</div>
+		
+								</div>
+							</div>
+	
+							<!-- ################################################################################## -->
+							<!-- Big Data Skills Content -->
+							<hr style="height:2px;border:none;color:#333;background-color:#333;">
+							<div class="main_subtitle">Big Data</div>
+							<br>
+							<div class="container-fluid">
+								<div class="row">
+			
+									<!-- Progress Bar -->
+									<div class="col-xl-6 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">Spark(ML, X, SQL)</div>
+											<div id="BD_1_pbar" class="skill_bars" data-perc=".85"
+												 data-name="BD_1_pbar" data-color-start="#79ccff"
+												 data-color-end="#9b74ff"></div>
+										</div>
+									</div>
+			
+									<!-- Progress Bar -->
+									<div class="col-xl-6 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">Apache (Hadoop, Hive, Arrow, Tez, Ray, Parquet)</div>
+											<div id="BD_2_pbar" class="skill_bars" data-perc="0.75"
+												 data-name="BD_2_pbar" data-color-start="#ff4646"
+												 data-color-end="#ff26d9"></div>
+										</div>
+									</div>
+									
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">SQL</div>
+											<div id="BD_3_pbar" class="skill_bars" data-perc="0.99"
+												 data-name="BD_3_pbar" data-color-start="#79ff7c"
+												 data-color-end="#ffbd4a"></div>
+										</div>
+									</div>
+									
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">Redis</div>
+											<div id="BD_4_pbar" class="skill_bars" data-perc="0.85"
+												 data-name="BD_4_pbar" data-color-start="#79ff8f"
+												 data-color-end="#7b74ff"></div>
+										</div>
+									</div>
+									
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">SPQRQL</div>
+											<div id="BD_5_pbar" class="skill_bars" data-perc="0.85"
+												 data-name="BD_5_pbar" data-color-start="#ff2d72"
+												 data-color-end="#ffab79"></div>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 	
-	
-						<!-- Optimization Skills Content -->
-						<hr style="height:2px;border:none;color:#333;background-color:#333;">
-						<div class="main_subtitle">Optimization</div>
-						<br>
-						<div class="container-fluid">
-							<div class="row">
-								
-								<!-- Progress Bar -->
-								<div class="col-xl-4 col-lg-6 pb_col">
-									<div class="pb_item">
-										<div class="p_bar_title">Gorubi</div>
-										<div id="Opt_1_pbar" class="skill_bars" data-perc="0.75"
-											 data-name="Opt_1_pbar" data-color-start="#79ff7c"
-											 data-color-end="#ffbd4a"></div>
+							<!-- ################################################################################## -->
+							<!-- Optimization Skills Content -->
+							<hr style="height:2px;border:none;color:#333;background-color:#333;">
+							<div class="main_subtitle">Optimization</div>
+							<br>
+							<div class="container-fluid">
+								<div class="row">
+			
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">Gorubi</div>
+											<div id="Opt_1_pbar" class="skill_bars" data-perc="0.75"
+												 data-name="Opt_1_pbar" data-color-start="#79ff7c"
+												 data-color-end="#ffbd4a"></div>
+										</div>
 									</div>
-								</div>
-								
-								<!-- Progress Bar -->
-								<div class="col-xl-4 col-lg-6 pb_col">
-									<div class="pb_item">
-										<div class="p_bar_title">Cplex</div>
-										<div id="Opt_2_pbar" class="skill_bars" data-perc="0.75"
-											 data-name="Opt_2_pbar" data-color-start="#79ff8f"
-											 data-color-end="#7b74ff"></div>
+			
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">Cplex</div>
+											<div id="Opt_2_pbar" class="skill_bars" data-perc="0.75"
+												 data-name="Opt_2_pbar" data-color-start="#79ff8f"
+												 data-color-end="#7b74ff"></div>
+										</div>
 									</div>
-								</div>
-								
-								<!-- Progress Bar -->
-								<div class="col-xl-4 col-lg-6 pb_col">
-									<div class="pb_item">
-										<div class="p_bar_title">JuMP</div>
-										<div id="Opt_3_pbar" class="skill_bars" data-perc="0.90"
-											 data-name="Opt_3_pbar" data-color-start="#ff2d72"
-											 data-color-end="#ffab79"></div>
+			
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">JuMP</div>
+											<div id="Opt_3_pbar" class="skill_bars" data-perc="0.90"
+												 data-name="Opt_3_pbar" data-color-start="#ff2d72"
+												 data-color-end="#ffab79"></div>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 	
-						<!-- Optimization Skills Content -->
-						<hr style="height:2px;border:none;color:#333;background-color:#333;">
-						<div class="main_subtitle">Others</div>
-						<br>
-						<div class="container-fluid">
-							<div class="row">
-								
-								<!-- Progress Bar -->
-								<div class="col-xl-4 col-lg-6 pb_col">
-									<div class="pb_item">
-										<div class="p_bar_title">SQL</div>
-										<div id="other_1_pbar" class="skill_bars" data-perc=".99"
-											 data-name="other_1_pbar" data-color-start="#79ccff"
-											 data-color-end="#9b74ff"></div>
+							<!-- ################################################################################## -->
+							<!-- Optimization Skills Content -->
+							<hr style="height:2px;border:none;color:#333;background-color:#333;">
+							<div class="main_subtitle">Others</div>
+							<br>
+							<div class="container-fluid">
+								<div class="row">
+			
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">networkx</div>
+											<div id="other_1_pbar" class="skill_bars" data-perc=".99"
+												 data-name="other_1_pbar" data-color-start="#79ccff"
+												 data-color-end="#9b74ff"></div>
+										</div>
 									</div>
-								</div>
-								
-								<!-- Progress Bar -->
-								<div class="col-xl-4 col-lg-6 pb_col">
-									<div class="pb_item">
-										<div class="p_bar_title">Pandas</div>
-										<div id="other_2_pbar" class="skill_bars" data-perc="0.99"
-											 data-name="other_2_pbar" data-color-start="#ff4646"
-											 data-color-end="#ff26d9"></div>
+			
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">Pandas</div>
+											<div id="other_2_pbar" class="skill_bars" data-perc="0.99"
+												 data-name="other_2_pbar" data-color-start="#ff4646"
+												 data-color-end="#ff26d9"></div>
+										</div>
 									</div>
-								</div>
-								
-								<!-- Progress Bar -->
-								<div class="col-xl-4 col-lg-6 pb_col">
-									<div class="pb_item">
-										<div class="p_bar_title">C/C++</div>
-										<div id="prog_3_pbar" class="skill_bars" data-perc="0.90"
-											 data-name="prog_3_pbar" data-color-start="#0054ff"
-											 data-color-end="#ff23d3"></div>
+			
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">Bokeh</div>
+											<div id="other_3_pbar" class="skill_bars" data-perc="0.75"
+												 data-name="other_3_pbar" data-color-start="#0054ff"
+												 data-color-end="#ff23d3"></div>
+										</div>
 									</div>
-								</div>
-								
-								<!-- Progress Bar -->
-								<div class="col-xl-4 col-lg-6 pb_col">
-									<div class="pb_item">
-										<div class="p_bar_title">Matlab</div>
-										<div id="prog_4_pbar" class="skill_bars" data-perc="0.95"
-											 data-name="prog_4_pbar" data-color-start="#79ff7c"
-											 data-color-end="#ffbd4a"></div>
+			
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">matplotlib</div>
+											<div id="other_4_pbar" class="skill_bars" data-perc="0.95"
+												 data-name="other_4_pbar" data-color-start="#79ff7c"
+												 data-color-end="#ffbd4a"></div>
+										</div>
 									</div>
-								</div>
-								
-								<!-- Progress Bar -->
-								<div class="col-xl-4 col-lg-6 pb_col">
-									<div class="pb_item">
-										<div class="p_bar_title">Julia</div>
-										<div id="prog_5_pbar" class="skill_bars" data-perc="0.75"
-											 data-name="prog_5_pbar" data-color-start="#79ff8f"
-											 data-color-end="#7b74ff"></div>
+			
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">Scipy</div>
+											<div id="other_5_pbar" class="skill_bars" data-perc="0.95"
+												 data-name="other_5_pbar" data-color-start="#79ff8f"
+												 data-color-end="#7b74ff"></div>
+										</div>
 									</div>
-								</div>
-								
-								<!-- Progress Bar -->
-								<div class="col-xl-4 col-lg-6 pb_col">
-									<div class="pb_item">
-										<div class="p_bar_title">Java</div>
-										<div id="prog_6_pbar" class="skill_bars" data-perc="0.6"
-											 data-name="prog_6_pbar" data-color-start="#ff2d72"
-											 data-color-end="#ffab79"></div>
+			
+									<!-- Progress Bar -->
+									<div class="col-xl-4 col-lg-6 pb_col">
+										<div class="pb_item">
+											<div class="p_bar_title">Jupyter</div>
+											<div id="other_6_pbar" class="skill_bars" data-perc="0.99"
+												 data-name="other_6_pbar" data-color-start="#ff2d72"
+												 data-color-end="#ffab79"></div>
+										</div>
 									</div>
+		
 								</div>
+							</div>
 							
-							</div>
-						</div>
-
-
+                        </div>
 					</div>
-                
                 </div>
             </div>
         </div>
         
-        <div align='center'>
+        <div style="text-align:center">
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             Copyright &copy;<script>document.write(new Date().getFullYear());</script>
             All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
