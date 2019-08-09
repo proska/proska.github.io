@@ -39,7 +39,7 @@
 
 			<div class="main_content">
 				<div class="main_title_container d-flex flex-column align-items-start justify-content-end">
-					<div class="main_subtitle">What I have done</div>
+<!--					<div class="main_subtitle">What I have done</div>-->
 					<div class="main_title">My Research</div>
 				</div>
 
@@ -47,10 +47,12 @@
 				<div class="portfolio_categories button-group filters-button-group">
 					<ul>
 						<li class="portfolio_category active is-checked" data-filter="*">All</li>
-						<li class="portfolio_category" data-filter=".p_hidim">High-Dim Data</li>
+						<li class="portfolio_category" data-filter=".p_hidim">Spaciotemporal</li>
 						<li class="portfolio_category" data-filter=".p_automl">AutoML</li>
-						<li class="portfolio_category" data-filter=".p_deep">Deep Learning</li>
-						<li class="portfolio_category" data-filter=".p_systems">Systems</li>
+						<li class="portfolio_category" data-filter=".p_graph">Graph</li>
+						<li class="portfolio_category" data-filter=".p_combi">Combinatorial</li>
+						<li class="portfolio_category" data-filter=".p_sec">Hardware Security</li>
+						<li class="portfolio_category" data-filter=".p_system">Systems</li>
 					</ul>
 				</div>
 
@@ -58,7 +60,7 @@
 					<div class="portfolio_grid grid clearfix">
 
 						<!-- Portfolio Item -->
-						<div class="grid-item portfolio_item p_automl">
+						<div class="grid-item portfolio_item p_automl p_combi">
 							<img src="images/DSBox_GSSISI_poster_H.jpg" alt="">
 							<div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
 								<div class="portfolio_item_title">DSBox: Datascience in a Box</div>
@@ -70,57 +72,104 @@
 						<div class="grid-item portfolio_item p_hidim">
 							<img src="images/brain_imaging.jpg" alt="">
 							<div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-<!--								<div class="portfolio_item_title">Deep Learning Empirical Space in Spatiotemporal Data Analysis</div>-->
-								<div class="portfolio_item_title">Deep Learning for Spatiotemporal Data Analysis</div>
-								<div class="portfolio_item_link"><a href="research_pages/spaciotemporal.html">See More</a></div>
+								<div class="portfolio_item_title">Deep Learning for Spatio-temporal Data Analysis</div>
+								<div class="portfolio_item_link"><a href="spaciotemporal.html">See More</a></div>
 							</div>
 						</div>
 						
 						
 						<!-- Portfolio Item -->
-						<div class="grid-item portfolio_item p_photography">
-							<img src="images/portfolio_2.jpg" alt="">
+						<div class="grid-item portfolio_item p_hidim">
+							<img src="images/Vitruvianischer_Mann.png" alt="">
 							<div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-								<div class="portfolio_item_title">Photography</div>
-								<div class="portfolio_item_link"><a href="#">See More</a></div>
+								<div class="portfolio_item_title">Methods for Discovery of Autism Spectrum Disorder (ASD)</div>
+								<div class="portfolio_item_link"><a href="ASD.html">See More</a></div>
 							</div>
 						</div>
 
 						<!-- Portfolio Item -->
-						<div class="grid-item portfolio_item p_brand">
+						<div class="grid-item portfolio_item p_graph">
 							<img src="images/portfolio_3.jpg" alt="">
 							<div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-								<div class="portfolio_item_title">Brand Identity</div>
+								<div class="portfolio_item_title">Tabular Data to Knowledge Graph Matching</div>
 								<div class="portfolio_item_link"><a href="#">See More</a></div>
 							</div>
 						</div>
-
+						
 						<!-- Portfolio Item -->
-						<div class="grid-item portfolio_item p_design">
-							<img src="images/portfolio_4.jpg" alt="">
+						<div class="grid-item portfolio_item p_graph">
+							<img src="images/T2WML.png" alt="">
 							<div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-								<div class="portfolio_item_title">Design</div>
-								<div class="portfolio_item_link"><a href="#">See More</a></div>
+								<div class="portfolio_item_title">T2WML: Table to Knowledge</div>
+								<div class="portfolio_item_link"><a href="https://github.com/usc-isi-i2/t2wml">See More</a></div>
 							</div>
 						</div>
 
 						<!-- Portfolio Item -->
-						<div class="grid-item portfolio_item p_photography">
-							<img src="images/portfolio_5.jpg" alt="">
+						<div class="grid-item portfolio_item p_combi">
+							<img src="images/hls.jpg" alt="">
 							<div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-								<div class="portfolio_item_title">Photography</div>
+								<div class="portfolio_item_title">Stochastic Methods and Monte-Carlo Tree Search</div>
 								<div class="portfolio_item_link"><a href="#">See More</a></div>
 							</div>
 						</div>
 
 						<!-- Portfolio Item -->
-						<div class="grid-item portfolio_item p_brand">
+						<div class="grid-item portfolio_item p_combi">
+							<img src="images/blokus.jpg" alt="">
+							<div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
+								<div class="portfolio_item_title">Monte Carlo Tree Search in Blokus-Duo</div>
+								<div class="portfolio_item_link"><a href="#">See More</a></div>
+							</div>
+						</div>
+						
+						<!-- Portfolio Item -->
+						<div class="grid-item portfolio_item p_sec">
+							<img src="images/aes.jpg" alt="">
+							<div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
+								<div class="portfolio_item_title">High-Throughput Encryption/Decryption</div>
+								<div class="portfolio_item_link"><a href="#">See More</a></div>
+							</div>
+						</div>
+						
+						<!-- Portfolio Item -->
+						<div class="grid-item portfolio_item p_sec">
+							<img src="images/aes.jpg" alt="">
+							<div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
+								<div class="portfolio_item_title">Hardware Security Module</div>
+								<div class="portfolio_item_link"><a href="#">See More</a></div>
+							</div>
+						</div>
+						
+						<!-- Portfolio Item -->
+						<div class="grid-item portfolio_item p_sec">
+							<img src="images/aes.jpg" alt="">
+							<div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
+								<div class="portfolio_item_title">Embedded Stream Encryption</div>
+								<div class="portfolio_item_link"><a href="#">See More</a></div>
+							</div>
+						</div>
+						
+						
+						<!-- Portfolio Item -->
+						<div class="grid-item portfolio_item p_system">
 							<img src="images/portfolio_6.jpg" alt="">
 							<div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-								<div class="portfolio_item_title">Brand Identity</div>
+								<div class="portfolio_item_title">Object-Oriented Assertion based Verification</div>
 								<div class="portfolio_item_link"><a href="#">See More</a></div>
 							</div>
 						</div>
+						
+						<!-- Portfolio Item -->
+						<div class="grid-item portfolio_item p_system">
+							<img src="images/memory.jpg" alt="">
+							<div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
+								<div class="portfolio_item_title">Subthreshold Memory Compiler</div>
+								<div class="portfolio_item_link"><a href="#">See More</a></div>
+							</div>
+						</div>
+					
+					
 					</div>
 						
 				</div>

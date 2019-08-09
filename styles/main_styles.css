@@ -535,6 +535,22 @@ section
 	line-height: 0.75;
 	margin-top: 12px;
 }
+.research_title
+{
+	font-size: 50px;
+	font-weight: 800;
+	color: #100f3a;
+	line-height: 0.90;
+	margin-top: 12px;
+}
+.research_section_title
+{
+	font-size: 25px;
+	font-weight: 600;
+	color: #100f3a;
+	line-height: 0.90;
+	margin-top: 30px;
+}
 .about_content
 {
 	
@@ -542,7 +558,7 @@ section
 .main_content_scroll
 {
 	margin-top: 72px;
-	max-height: calc(100% - 193px - 72px - 30px);
+	max-height: calc(100% - 53px - 72px - 30px);
 	padding-right: 60px;
 }
 .mCS-minimal.mCSB_scrollTools .mCSB_draggerRail, .mCS-minimal-dark.mCSB_scrollTools .mCSB_draggerRail
@@ -560,9 +576,21 @@ section
 	font-weight: 700;
 	color: #100f3a;
 }
+.about_list
+{
+	font-size: 10px;
+	font-weight: 700;
+	color: #100f3a;
+}
 .about_text
 {
 	margin-top: 31px;
+}
+.my_research_text
+{
+	margin-top: 31px;
+	font-weight: 500;
+	color: black;
 }
 .loaders
 {

@@ -99,6 +99,45 @@ function populate_general_info() {
     general_info.innerHTML = s
 }
 
+function populate_research_info(name='General Information', image="images/brain_image.jpg") {
+    var s = "<div>\n" +
+        "\t\t\t\t\t<div class=\"general_info_image\">\n" +
+        "\t\t\t\t\t\t<div class=\"background_image\" style=\"background-image:url("+image+")\"></div>\n" +
+        "\t\t\t\t\t</div>\n" +
+        "\t\t\t\t</div>\n" +
+        "\t\t\t\t<div class=\"general_info_content\">\n" +
+        "\t\t\t\t\t<div class=\"general_info_content_inner mCustomScrollbar\" data-mcs-theme=\"minimal-dark\">\n" +
+        "\t\t\t\t\t\t<div class=\"general_info_title\">"+name+"</div>\n" +
+        "\t\t\t\t\t\t<ul class=\"general_info_list\">\n" +
+        "\t\t\t\t\t\t\t<li class=\"d-flex flex-row align-items-center justify-content-start\">\n" +
+        "\t\t\t\t\t\t\t\t<div class=\"general_info_icon d-flex flex-column align-items-start justify-content-center\"><img alt=\"\" src=\"images/icon_3.png\"></div>\n" +
+        "\t\t\t\t\t\t\t\t<div class=\"general_info_text\"><a href=\"mailto:qasemi.ehs@gmail.com\">qasemi.ehs@gmail.com</a></div>\n" +
+        "\t\t\t\t\t\t\t</li>\n" +
+        // "\t\t\t\t\t\t\t<li class=\"d-flex flex-row align-items-center justify-content-start\">\n" +
+        // "\t\t\t\t\t\t\t\t<div class=\"general_info_icon d-flex flex-column align-items-start justify-content-center\"><img alt=\"\" src=\"images/icon_4.png\"></div>\n" +
+        // "\t\t\t\t\t\t\t\t<div class=\"general_info_text\">+1 608 571 8947</div>\n" +
+        // "\t\t\t\t\t\t\t</li>\n" +
+        // "\t\t\t\t\t\t\t<li class=\"d-flex flex-row align-items-center justify-content-start\">\n" +
+        // "\t\t\t\t\t\t\t\t<div class=\"general_info_icon d-flex flex-column align-items-start justify-content-center\"><img alt=\"\" src=\"images/icon_5.png\"></div>\n" +
+        // "\t\t\t\t\t\t\t\t<div class=\"general_info_text\"><a href=\"ehsanqasemi.com\">ehsanqasemi.com</a></div>\n" +
+        // "\t\t\t\t\t\t\t</li>\n" +
+        // "\t\t\t\t\t\t</ul>\n" +
+        "\n" +
+        "\t\t\t\t\t\t<!-- Social -->\n" +
+        // "\t\t\t\t\t\t<div class=\"social_container\">\n" +
+        // "\t\t\t\t\t\t\t<ul class=\"d-flex flex-row align-items-start justify-content-start\">\n" +
+        // "\t\t\t\t\t\t\t\t<li><a href=\"https://github.com/proska\"><i aria-hidden=\"true\" class=\"fa fa-github\"></i></a></li>\n" +
+        // "\t\t\t\t\t\t\t\t<li><a href=\"https://www.linkedin.com/in/ehsan-qasemi-39627477/\"><i aria-hidden=\"true\" class=\"fa fa-linkedin\"></i></a></li>\n" +
+        // "\t\t\t\t\t\t\t\t<li><a href=\"https://twitter.com/Proska_\"><i aria-hidden=\"true\" class=\"fa fa-twitter\"></i></a></li>\n" +
+        // "\t\t\t\t\t\t\t</ul>\n" +
+        // "\t\t\t\t\t\t</div>\n" +
+        "\t\t\t\t\t</div>\n" +
+        "\t\t\t\t</div>"
+
+    var general_info = document.getElementById('research_information')
+    general_info.innerHTML = s
+}
+
 // function generate_header(name="About") {
 //     var s = '\t\t\t<div class="main_nav d-flex flex-row align-items-end justify-content-start">\n' +
 //         '\t\t\t\t<ul class="d-flex flex-row align-items-center justify-content-start">\n' +
