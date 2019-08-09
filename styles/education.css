@@ -714,6 +714,13 @@ section
 	color: #100f3a;
 	line-height: 0.75;
 }
+.research_bullet
+{
+	font-size: 24px;
+	font-weight: 700;
+	color: #100f3a;
+	/*line-height: 0.75;*/
+}
 .edu_subtitle
 {
 	font-size: 16px;
