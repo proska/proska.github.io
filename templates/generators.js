@@ -40,10 +40,10 @@ function populate_header() {
             "\t\t\t\t\t\t\t<li><a href=\"index.html\">About</a></li>\n" +
             "\t\t\t\t\t\t\t<li><a href=\"skills.html\">Skills</a></li>\n" +
             "\t\t\t\t\t\t\t<li><a href=\"education.html\">Education</a></li>\n" +
-            "\t\t\t\t\t\t\t<li><a href=\"services.html\">Research</a></li>\n" +
+            "\t\t\t\t\t\t\t<li><a href=\"research.html\">Research</a></li>\n" +
             "\t\t\t\t\t\t\t<li><a href=\"experience.html\">Experience</a></li>\n" +
-            "\t\t\t\t\t\t\t<li><a href=\"teaching_template.html\">Teaching</a></li>\n" +
-            "\t\t\t\t\t\t\t<li><a href=\"services.html\">Services</a></li>\n" +
+            "\t\t\t\t\t\t\t<li><a href=\"teaching.html\">Teaching</a></li>\n" +
+            // "\t\t\t\t\t\t\t<li><a href=\"services.html\">Services</a></li>\n" +
             "\t\t\t\t\t\t</ul>\n" +
             "\t\t\t\t\t</div>\n" +
             "\t\t\t\t</div>\n" +
