@@ -14,7 +14,7 @@ function populate_header() {
 
     var header_items = [["index.html", "About"], ["skills.html", "Skills"], ["education.html", "Education"],
         ["research.html", "Research"], ["experience.html", "Experience"], ["teaching.html", "Teaching"],
-        ["services.html", "Services"]
+        // ["services.html", "Services"]
     ]
 
     function generate_header_string() {
@@ -42,7 +42,7 @@ function populate_header() {
             "\t\t\t\t\t\t\t<li><a href=\"education.html\">Education</a></li>\n" +
             "\t\t\t\t\t\t\t<li><a href=\"services.html\">Research</a></li>\n" +
             "\t\t\t\t\t\t\t<li><a href=\"experience.html\">Experience</a></li>\n" +
-            "\t\t\t\t\t\t\t<li><a href=\"teaching.html\">Teaching</a></li>\n" +
+            "\t\t\t\t\t\t\t<li><a href=\"teaching_template.html\">Teaching</a></li>\n" +
             "\t\t\t\t\t\t\t<li><a href=\"services.html\">Services</a></li>\n" +
             "\t\t\t\t\t\t</ul>\n" +
             "\t\t\t\t\t</div>\n" +
@@ -146,14 +146,14 @@ function populate_research_info(name='General Information', image="images/brain_
 //         '\t\t\t\t\t<li class="active"><a href="education.html">Education</a></li>\n' +
 //         '\t\t\t\t\t<li><a href="research.html">Research</a></li>\n' +
 //         '\t\t\t\t\t<li><a href="experience.html">Experience</a></li>\n' +
-//         '\t\t\t\t\t<li><a href="teaching.html">Teaching</a></li>\n' +
+//         '\t\t\t\t\t<li><a href="teaching_template.html">Teaching</a></li>\n' +
 //         '\t\t\t\t\t<li><a href="services.html">Services</a></li>\n' +
 //         '\t\t\t\t</ul>\n' +
 //         '\t\t\t</div>'
 //
 //
 //     var header_items = [["index.html", "About"], ["skills.html", "Skills"], ["education.html", "Education"],
-//         ["research.html", "Research"], ["experience.html", "Experience"], ["teaching.html", "Teaching"],
+//         ["research.html", "Research"], ["experience.html", "Experience"], ["teaching_template.html", "Teaching"],
 //         ["services.html", "Services"]
 //     ]
 //     var ps =
