@@ -1,0 +1,348 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<style>
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: #243b55;
+        color: white;
+    }
+
+    crowd-instructions{
+        color: black;
+        line-height: 30px;
+    }
+
+    body, p {
+        line-height: 24px;
+    }
+    .prompt-box {
+        /*position: absolute;*/
+        /*top: 50%;*/
+        /*left: 50%;*/
+        width: 80%;
+        padding: 10px;
+        /*transform: translate(-50%, -50%);*/
+        transform: translate(10%);
+        background: rgba(0, 0, 0, .1);
+        box-sizing: border-box;
+        /*box-shadow: 0 15px 25px rgba(0, 0, 0, .6);*/
+        border-radius: 10px;
+    }
+    .prompt-box:hover {
+        background: rgba(0, 0, 0, .2);
+    }
+
+    .instruction-box {
+        transform: translate(10%);
+        /*transform: translate(10%);*/
+        text-align: center;
+        background: rgba(0, 0, 0, .5);
+        box-sizing: border-box;
+        border-radius: 10px;
+        width: 80%;
+    }
+
+    /*.instruction-box table td{*/
+    /*crowd-card table td{*/
+    /*    text-align: center;*/
+    /*    border-collapse: collapse;*/
+    /*    border: 1px solid white;*/
+    /*    margin: 0 auto;*/
+    /*}*/
+
+    .empty-box {
+        box-sizing: border-box;
+        border-radius: 10px;
+        border-color: #243b55;
+        border-width: 2px;
+    }
+    .emph-box {
+        padding: 10px;
+        background: rgba(0, 0, 0, .1);
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+
+    .prompt-box h2 {
+        margin: 0 0 30px;
+        padding: 0;
+        /*color: #fff;*/
+        text-align: center;
+    }
+
+    .prompt-box p{
+        margin: 30px 0;
+        /*color: #fff;*/
+        /*text-align: center;*/
+    }
+    .prompt-box p ol li{
+        /*color: #fff;*/
+        text-align: center;
+        display: inline;
+        /*float: right;*/
+    }
+
+    .prompt-box p{
+        /*margin: 30px 0;*/
+        /*color: #fff;*/
+        text-align: center;
+    }
+    .crowd-form crowd-button{
+        /*transform: translate(50%);*/
+        /*align-items: center;*/
+        display: flex;
+        justify-content: center;
+    }
+    .prompt-box crowd-input{
+        /*color: #ffffff;*/
+        text-align: center;
+    }
+    crowd-instructions detailed-instructions p{
+        text-align: left;
+        color: black;
+    }
+    .example {
+        text-align: center;
+        color: black;
+        font-style: italic;
+
+        padding: 10px;
+        background: rgba(0, 0, 0, .1);
+        box-sizing: border-box;
+        border-radius: 10px;
+        width: 80%;
+    }
+</style>
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+      please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+<crowd-form class="crowd-form" id="mainform" answer-format="flatten-objects">
+<!--    <crowd-instructions link-text="Why we do this study?" link-type="button">-->
+<!--        <p>-->
+<!--            We are conducting an academic study on the implicit expectations people have about everyday phenomenons-->
+<!--            (Common Sense). We need to understand your mental image about the common tasks and usages of everyday-->
+<!--            objects by asking about the conditions that enable or disable the task or the usage of that specific-->
+<!--            object.-->
+<!--        </p>-->
+<!--    </crowd-instructions>-->
+
+
+    <crowd-instructions style="alignment: center" link-text="View instructions" link-type="button">
+        <short-summary>
+            <p>Simply answer complete the prompt sentence with the first thing that comes to your mind</p>
+        </short-summary>
+
+        <detailed-instructions>
+            <h3>What Makes Everyday Tasks Possible</h3>
+            <p>
+                In each example, you are given prompt sentence, such as:
+                <p class="example">Net is used for catching fish, only if</p>
+                or
+                <p class="example">Net is used for catching fish unless</p>
+                and you are asked to complete the prompt sentence with the <span style="color: darkred">first reasonable thing that comes to your
+                mind</span> which either makes the prompt sentence possible, such as:
+                <p class="example">Net is used for catching fish, only if <u>we are in the water</u></p>
+                or makes the tasks impossible to happened, like:
+                <p class="example">Net is used for catching fish, unless <u>the net has a large tearing</u></p>
+            </p>
+            <br>
+            <p>
+                Please note that, our goal is to capture the most common perceptions that comes to your mind and is specific to each prompt
+                sentence, so make sure your answers are concrete, concise and usual.
+                Below, we have compiled a short list of common bad responses:
+
+                <ol>
+                    <li><strong>Avoid Pronouns</strong> unless they are not referred in the sentence. For instance, in the examples below,
+                        as "the net" is mentioned in the sentence you must not use a pronouns to refer to it whereas the person(s) performing the fishing
+                        are not mentioned which makes it preferred to address them with pronouns.
+                        <div class="emph-box">
+                            The net is used for catching fish, unless
+                            <ul>
+                                <li><span style="color: darkred">it</span> has large tearings.<i class="fa fa-window-close" style="color:darkred"></i></li>
+                                <li><span style="color: green">the net</span> has large tearings.<i class="fa fa-check-circle" style="color:green"></i></li>
+                                <li><span style="color: green">we</span> are in a desert.<i class="fa fa-check-circle" style="color:green"></i></li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="emph-box">
+                            The net is used for catching fish only if
+                            <ul>
+                                <li><span style="color: green">the net</span> has large tearings.<i class="fa fa-check-circle" style="color:green"></i></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Do Not Overthink</strong>: Avoid unusual responses that require a lot of backstory. We are looking for things that are
+                        obvious for you but not mentioned in the sentence.
+                        <div class="emph-box">
+                            <ul>
+                                The net is used for catching fish, unless
+                                <li>the boat is sinking.<i class="fa fa-window-close" style="color:darkred"></i></li>
+                                <li>it is illegal to do fishing.<i class="fa fa-window-close" style="color:darkred"></i></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Be Specific</strong>: Avoid general responses that are not specific to the prompt sentence.
+                        Especially, please avoid responses that can be used for any similar sentence.
+                        <div class="emph-box">
+                            <ul>
+                                The net is used for catching fish, unless
+                                <li>the boat is broken.<i class="fa fa-window-close" style="color:darkred"></i></li>
+                                <li>the net is broken.<i class="fa fa-window-close" style="color:darkred"></i></li>
+                                <li>the net is not working.<i class="fa fa-window-close" style="color:darkred"></i></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Avoid Negatives</strong>: Avoid writing using negatives (e.g. not) in your responses.
+                        <div class="emph-box">
+                            <ul>
+                                The net is used for catching fish, only if
+                                <li>the net is <span style="color: darkred">not having</span> a large tearing.<i class="fa fa-window-close" style="color:darkred"></i></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </p>
+        </detailed-instructions>
+        <negative-example>
+            <div class="emph-box">
+                The net is used for catching fish only if<br>
+                -> it has large tearings.<i class="fa fa-window-close" style="color:darkred"></i> (Avoid Pronouns)
+            </div>
+        </negative-example>
+
+        <positive-example>
+            <div class="emph-box">
+                The net is used for catching fish only if<br>
+                -> the net has a large tearing.<i class="fa fa-check-circle" style="color:green"></i>
+            </div>
+        </positive-example>
+
+        <positive-example>
+            <div class="emph-box">
+                The net is used for catching fish only if<br>
+                -> we are in the water.<i class="fa fa-check-circle" style="color:green"></i><br>
+                (Although a pronoun is used here the response is correct,
+                because the person doing the task is not referred in the sentence and hence using a pronoun is permitted
+                here.)
+            </div>
+        </positive-example>
+
+        <positive-example>
+            <div class="emph-box">
+            The net is used for catching fish unless<br>
+            -> the net has a large tearing.<i class="fa fa-check-circle" style="color:green"></i>
+            </div>
+        </positive-example>
+
+        <negative-example>
+            <div class="emph-box">
+            The net is used for catching fish unless<br>
+            -> the boat is sinking.<i class="fa fa-window-close" style="color:darkred"></i> (Do Not Overthink)
+            </div>
+        </negative-example>
+
+        <negative-example>
+            <div class="emph-box">
+            The net is used for catching fish unless<br>
+            -> the net is broken.<i class="fa fa-window-close" style="color:darkred"></i> (Be Specific)
+            </div>
+        </negative-example>
+
+        <positive-example>
+            <div class="emph-box">
+                The net is used for catching fish unless<br>
+                -> there is no fish in the water.<i class="fa fa-check-circle" style="color:green"></i>
+            </div>
+        </positive-example>
+
+        <negative-example>
+            <div class="emph-box">
+                The net is used for catching fish unless
+                -> it is illegal to do fishing.<i class="fa fa-window-close" style="color:darkred"></i> (Do Not Overthink)
+            </div>
+        </negative-example>
+
+    </crowd-instructions>
+    <br>
+    <div class="instruction-box">
+        <br>
+        Complete the prompt sentence with the first answer that comes to your mind. And remember: <br>
+        <span>1. Don't use pronouns</span>    <span>2. don't overthink</span>    <span>3. Be specific</span>    <span>4. Avoid Negatives</span>
+        <br>
+        <br>
+    </div>
+    <br>
+    <br>
+    <!-- Your contexts and intents will be substituted for the "context" and "intent" variables when you
+           publish a batch with an input file containing multiple contexts and intents -->
+    <div>
+        <div class="prompt-box" id="questionbox1">
+            <p>${sentence1}</p>
+            <crowd-input class="crowd-input" name="response1" auto-focus="true"
+                         placeholder="your response" required
+                         auto-validate="true" allowed-pattern="[a-zA-z\.\!\, ]"
+                         style="color: #ffffff;"
+            ></crowd-input>
+        </div>
+        <crowd-input name="mytimes1" id="mytimes1" placeholder="" disabled="true"></crowd-input>
+    </div>
+    <crowd-card>
+    </crowd-card>
+    <div>
+        <div class="prompt-box" id="questionbox2">
+            <p>${sentence2}</p>
+            <crowd-input name="response2" auto-focus="true"
+                         placeholder="your response" required
+                         auto-validate="true" allowed-pattern="[a-zA-z\.\!\, ]"></crowd-input>
+        </div>
+        <crowd-input name="mytimes2" id="mytimes1" placeholder="" disabled="true"></crowd-input>
+    </div>
+    <!-- <crowd-button form-action="submit"></crowd-button> -->
+</crowd-form>
+
+<script>
+    var max_questions=2
+    function getTimeStamp() {
+        var now = new Date();
+        return ((now.getMonth() + 1) + '/' + (now.getDate()) + '/' + now.getFullYear() + " " + now.getHours() + ':'
+            + ((now.getMinutes() < 10) ? ("0" + now.getMinutes()) : (now.getMinutes())) + ':' + ((now.getSeconds() < 10) ? ("0" + now
+                .getSeconds()) : (now.getSeconds())));
+    };
+    function createlog(i) {
+        var textID="mytimes"+i.toString()
+        function logTimeStamps() {
+            var time = getTimeStamp()
+            var message = document.getElementById(textID).value;
+            var newMessage = message.toString() + ";" + time.toString()
+            // alert(newMessage)
+            document.getElementById(textID).value = newMessage;
+        }
+        return logTimeStamps
+    }
+    // Array(max_questions).forEach(
+    //     function (i) {
+    //         var n = i+1
+    //         document.getElementById("questionbox"+n.toString()).onclick = createlog(n)
+    //         console.log(n)
+    //     }
+    // )
+    // // ["questionbox1"].onclick = logTimeStamps;
+    // document.getElementById("mainform").onsubmit = createlog(max_questions);
+
+</script>
