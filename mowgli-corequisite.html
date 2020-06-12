@@ -119,6 +119,10 @@
         text-align: left;
         color: black;
     }
+    crowd-modal p{
+        text-align: left;
+        color: black;
+    }
     .example {
         text-align: center;
         color: black;
@@ -158,13 +162,14 @@
             <br>
             <p>
                 Please note that, our goal is to capture the most common perceptions that comes to your mind and is specific to each prompt
-                sentence, so make sure your answers are concrete, concise and usual.
+                sentence, so make sure your answers are specific, concise and usual.
                 Below, we have compiled a short list of common bad responses:
 
                 <ol>
-                    <li><strong>Avoid Pronouns</strong> unless they are not referred in the sentence. For instance, in the examples below,
-                        as "the net" is mentioned in the sentence you must not use a pronouns to refer to it whereas the person(s) performing the fishing
-                        are not mentioned which makes it preferred to address them with pronouns.
+                    <li><strong>Avoid Pronouns</strong> for all the things referred inside the prompt sentence. For instance, in the examples below,
+                        as "the net" and "fish" are mentioned in the sentence you must not use a pronouns to refer to them.
+                        The only exception for using pronoun is for referring the person(s) performing the act (fishing in this case)
+                        where using pronouns is preferred.
                         <div class="emph-box">
                             The net is used for catching fish, unless
                             <ul>
@@ -177,18 +182,19 @@
                         <div class="emph-box">
                             The net is used for catching fish only if
                             <ul>
-                                <li><span style="color: green">the net</span> has large tearings.<i class="fa fa-check-circle" style="color:green"></i></li>
+                                <li>There are some <span style="color: green">fish</span> in the water.<i class="fa fa-check-circle" style="color:green"></i></li>
+                                <li>we are in the water.<i class="fa fa-check-circle" style="color:green"></i></li>
                             </ul>
                         </div>
                     </li>
                     <li>
                         <strong>Do Not Overthink</strong>: Avoid unusual responses that require a lot of backstory. We are looking for things that are
-                        obvious for you but not mentioned in the sentence.
+                        obvious to you but not mentioned in the sentence.
                         <div class="emph-box">
                             <ul>
                                 The net is used for catching fish, unless
                                 <li>the boat is sinking.<i class="fa fa-window-close" style="color:darkred"></i></li>
-                                <li>it is illegal to do fishing.<i class="fa fa-window-close" style="color:darkred"></i></li>
+                                <li>there is an earthquake.<i class="fa fa-window-close" style="color:darkred"></i></li>
                             </ul>
                         </div>
                     </li>
@@ -209,7 +215,7 @@
                         <div class="emph-box">
                             <ul>
                                 The net is used for catching fish, only if
-                                <li>the net is <span style="color: darkred">not having</span> a large tearing.<i class="fa fa-window-close" style="color:darkred"></i></li>
+                                <li>the net does <span style="color: darkred">not have</span> a large tearing.<i class="fa fa-window-close" style="color:darkred"></i></li>
                             </ul>
                         </div>
                     </li>
@@ -218,14 +224,14 @@
         </detailed-instructions>
         <negative-example>
             <div class="emph-box">
-                The net is used for catching fish only if<br>
+                The net is used for catching fish unless<br>
                 -> it has large tearings.<i class="fa fa-window-close" style="color:darkred"></i> (Avoid Pronouns)
             </div>
         </negative-example>
 
         <positive-example>
             <div class="emph-box">
-                The net is used for catching fish only if<br>
+                The net is used for catching fish unless<br>
                 -> the net has a large tearing.<i class="fa fa-check-circle" style="color:green"></i>
             </div>
         </positive-example>
@@ -242,8 +248,8 @@
 
         <positive-example>
             <div class="emph-box">
-            The net is used for catching fish unless<br>
-            -> the net has a large tearing.<i class="fa fa-check-circle" style="color:green"></i>
+            The net is used for catching fish only if<br>
+            -> it is the right size.<i class="fa fa-check-circle" style="color:green"></i>
             </div>
         </positive-example>
 
@@ -267,6 +273,12 @@
                 -> there is no fish in the water.<i class="fa fa-check-circle" style="color:green"></i>
             </div>
         </positive-example>
+        <positive-example>
+            <div class="emph-box">
+                The net is used for catching fish only if<br>
+                -> if we are near water.<i class="fa fa-check-circle" style="color:green"></i>
+            </div>
+        </positive-example>
 
         <negative-example>
             <div class="emph-box">
@@ -276,16 +288,17 @@
         </negative-example>
 
     </crowd-instructions>
-    <crowd-instructions link-text="Why we do this study?" link-type="button">
-        <short-summary>
+    <crowd-modal
+        link-text = "Why we do this study?"
+        link-type = "button">
+        <p>
             We are conducting an academic study on the implicit expectations people have about everyday phenomenons
             (Common Sense). We need to understand your mental image about the common tasks and usages of everyday
             objects, by asking about the conditions that enable or disable the task or the usage of that specific
             object. for more info please refer to <a href="https://www.darpa.mil/program/machine-common-sense">this link</a>.
-        </short-summary>
-    </crowd-instructions>
+        </p>
+    </crowd-modal>
 
-    
     <br>
     <div class="instruction-box">
         <br>
@@ -320,11 +333,12 @@
         </div>
         <crowd-input name="mytimes2" id="mytimes1" placeholder="" disabled="true"></crowd-input>
     </div>
-    <!-- <crowd-button form-action="submit"></crowd-button> -->
+
 </crowd-form>
 
 <script>
     var max_questions=2
+    var first_click = Array(max_questions).fill(0.0)
     function getTimeStamp() {
         var now = new Date();
         return ((now.getMonth() + 1) + '/' + (now.getDate()) + '/' + now.getFullYear() + " " + now.getHours() + ':'
