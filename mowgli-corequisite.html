@@ -18,14 +18,16 @@
         color: white;
     }
 
-    p{
+    p {
         line-height: 26px;
     }
-    li{
+
+    li {
         line-height: 26px;
         margin: 10px 0;
     }
-    crowd-instructions{
+
+    crowd-instructions {
         color: black;
         line-height: 26px;
     }
@@ -33,6 +35,7 @@
     body, p {
         line-height: 26px;
     }
+
     .prompt-box {
         /*position: absolute;*/
         /*top: 50%;*/
@@ -46,6 +49,7 @@
         /*box-shadow: 0 15px 25px rgba(0, 0, 0, .6);*/
         border-radius: 10px;
     }
+
     .prompt-box:hover {
         background: rgba(0, 0, 0, .2);
     }
@@ -74,6 +78,7 @@
         border-color: #243b55;
         border-width: 2px;
     }
+
     .emph-box {
         padding: 10px;
         background: rgba(0, 0, 0, .1);
@@ -88,41 +93,47 @@
         text-align: center;
     }
 
-    .prompt-box p{
+    .prompt-box p {
         margin: 30px 0;
         /*color: #fff;*/
         /*text-align: center;*/
     }
-    .prompt-box p ol li{
+
+    .prompt-box p ol li {
         /*color: #fff;*/
         text-align: center;
         display: inline;
         /*float: right;*/
     }
 
-    .prompt-box p{
+    .prompt-box p {
         /*margin: 30px 0;*/
         /*color: #fff;*/
         text-align: center;
     }
-    .crowd-form crowd-button{
+
+    .crowd-form crowd-button {
         /*transform: translate(50%);*/
         /*align-items: center;*/
         display: flex;
         justify-content: center;
     }
-    .prompt-box crowd-input{
+
+    .prompt-box crowd-input {
         /*color: #ffffff;*/
         text-align: center;
     }
-    crowd-instructions detailed-instructions p{
+
+    crowd-instructions detailed-instructions p {
         text-align: left;
         color: black;
     }
-    crowd-modal p{
+
+    crowd-modal p {
         text-align: left;
         color: black;
     }
+
     .example {
         text-align: center;
         color: black;
@@ -150,77 +161,117 @@
             <h3>What Makes Everyday Tasks Possible</h3>
             <p>
                 In each example, you are given prompt sentence, such as:
-                <p class="example">Net is used for catching fish, only if</p>
-                or
-                <p class="example">Net is used for catching fish unless</p>
-                and you are asked to complete the prompt sentence with the <span style="color: darkred">first reasonable thing that comes to your
-                mind</span> which either makes the prompt sentence possible, such as:
-                <p class="example">Net is used for catching fish, only if <u>we are in the water</u></p>
-                or makes the tasks impossible to happened, like:
-                <p class="example">Net is used for catching fish, unless <u>the net has a large tearing</u></p>
+            <p class="example">Net is used for catching fish, only if</p>
+            or
+            <p class="example">Net is used for catching fish unless</p>
+            and you are asked to complete the prompt sentence with the <span style="color: darkred">first reasonable thing that
+            comes to your mind</span> which either makes the prompt sentence possible, such as:
+            <p class="example">Net is used for catching fish, only if <u>we are in the water</u></p>
+            or makes the tasks impossible to happened, like:
+            <p class="example">Net is used for catching fish, unless <u>the net has a large tearing</u></p>
             </p>
             <br>
             <p>
-                Please note that, our goal is to capture the most common perceptions that comes to your mind and is specific to each prompt
-                sentence, so make sure your answers are specific, concise and usual.
-                Below, we have compiled a short list of common bad responses:
+                Our goal is to capture the most common perceptions that comes to your mind and is specific to each
+                prompt sentence, so make sure your answers are specific, concise and usual.
+                A simple way to write the answers is to focus on the mental image you will have after reading the prompt question and explain anything that makes that image possible or impossible.
+                Below, we have compiled a short list of common bad responses and how to fix them:
 
-                <ol>
-                    <li><strong>Avoid Pronouns</strong> for all the things referred inside the prompt sentence. For instance, in the examples below,
-                        as "the net" and "fish" are mentioned in the sentence you must not use a pronouns to refer to them.
-                        The only exception for using pronoun is for referring the person(s) performing the act (fishing in this case)
-                        where using pronouns is preferred.
-                        <div class="emph-box">
+            <ol>
+                <li><strong>Avoid Pronouns</strong> for all the objects. For
+                    instance, in the examples below, "the net", "fish", "a boat" or "the sea" are all related to objects
+                    and you must not use a pronouns to refer to them. <br>
+                    For referring to the person(s) performing the act you can use pronouns.
+                    (fishing in this case).
+                    <div class="emph-box">
+                        The net is used for catching fish, unless
+                        <ul>
+                            <li><span style="color: darkred">it</span> has large tearings.
+                                <i class="fa fa-window-close"style="color:darkred"></i>
+                            </li>
+                            <li><span style="color: green">the net</span> has large tearings.<i
+                                    class="fa fa-check-circle" style="color:green"></i>
+                            </li>
+                            <li><span style="color: green">we</span> are in a desert.
+                                <i class="fa fa-check-circle" style="color:green"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="emph-box">
+                        The net is used for catching fish only if
+                        <ul>
+                            <li>There are some <span style="color: green">fish</span> in the water.
+                                <i class="fa fa-check-circle" style="color:green"></i>
+                            </li>
+                            <li>we are in the water.
+                                <i class="fa fa-check-circle" style="color:green"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+<!--                <li>-->
+<!--                    <strong>Think close to the picture</strong>: As soon as one reads the prompt sentence they have a-->
+<!--                    "picture" in mind that contains some key objects (in our example: "net", "fishing", "sea", "boat"-->
+<!--                    etc.). We ask you to narrow down your response to these key objects. For example, if you are-->
+<!--                    thinking about "bad weather" as a situation that makes it impossible for fishing-->
+<!--                    with net, rephrase your response in term of the key objects e.g. "the sea is turbulent" or-->
+<!--                    "we are in rough waters"-->
+<!--                    <div class="emph-box">-->
+<!--                        <ul>-->
+<!--                            The net is used for catching fish, unless-->
+<!--                            <li>the weather is stormy.<i class="fa fa-window-close" style="color:darkred"></i></li>-->
+<!--                            <li>there is an earthquake.<i class="fa fa-window-close" style="color:darkred"></i></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </li>-->
+                <li>
+                    <strong>Do Not Overthink</strong>: Avoid unusual responses that require a lot of backstory. We are
+                    looking for things that are
+                    obvious to you but not mentioned in the sentence.
+                    <div class="emph-box">
+                        <ul>
                             The net is used for catching fish, unless
-                            <ul>
-                                <li><span style="color: darkred">it</span> has large tearings.<i class="fa fa-window-close" style="color:darkred"></i></li>
-                                <li><span style="color: green">the net</span> has large tearings.<i class="fa fa-check-circle" style="color:green"></i></li>
-                                <li><span style="color: green">we</span> are in a desert.<i class="fa fa-check-circle" style="color:green"></i></li>
-                            </ul>
-                        </div>
-                        <br>
-                        <div class="emph-box">
-                            The net is used for catching fish only if
-                            <ul>
-                                <li>There are some <span style="color: green">fish</span> in the water.<i class="fa fa-check-circle" style="color:green"></i></li>
-                                <li>we are in the water.<i class="fa fa-check-circle" style="color:green"></i></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <strong>Do Not Overthink</strong>: Avoid unusual responses that require a lot of backstory. We are looking for things that are
-                        obvious to you but not mentioned in the sentence.
-                        <div class="emph-box">
-                            <ul>
-                                The net is used for catching fish, unless
-                                <li>the boat is sinking.<i class="fa fa-window-close" style="color:darkred"></i></li>
-                                <li>there is an earthquake.<i class="fa fa-window-close" style="color:darkred"></i></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <strong>Be Specific</strong>: Avoid general responses that are not specific to the prompt sentence.
-                        Especially, please avoid responses that can be used for any similar sentence.
-                        <div class="emph-box">
-                            <ul>
-                                The net is used for catching fish, unless
-                                <li>the boat is broken.<i class="fa fa-window-close" style="color:darkred"></i></li>
-                                <li>the net is broken.<i class="fa fa-window-close" style="color:darkred"></i></li>
-                                <li>the net is not working.<i class="fa fa-window-close" style="color:darkred"></i></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <strong>Avoid Negatives</strong>: Avoid writing using negatives (e.g. not) in your responses.
-                        <div class="emph-box">
-                            <ul>
-                                The net is used for catching fish, only if
-                                <li>the net does <span style="color: darkred">not have</span> a large tearing.<i class="fa fa-window-close" style="color:darkred"></i></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ol>
+                            <li>the sun is exploding.<i class="fa fa-window-close" style="color:darkred"></i></li>
+                            <li>there is an earthquake.<i class="fa fa-window-close" style="color:darkred"></i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <strong>Be Specific</strong>: Avoid general responses that are not specific to the prompt sentence.
+                    Especially, please avoid responses that can be used for any similar sentence.
+                    <div class="emph-box">
+                        <ul>
+                            The net is used for catching fish, unless
+                            <li>the boat is broken.<i class="fa fa-window-close" style="color:darkred"></i></li>
+                            <li>the net is broken.<i class="fa fa-window-close" style="color:darkred"></i></li>
+                            <li>the net is not working.<i class="fa fa-window-close" style="color:darkred"></i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <strong>Avoid Negatives</strong>: Avoid writing using negatives (e.g. not) in your responses.
+                    <div class="emph-box">
+                        <ul>
+                            The net is used for catching fish, only if
+                            <li>the net does <span style="color: darkred">not have</span> a large tearing.<i
+                                    class="fa fa-window-close" style="color:darkred"></i></li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
             </p>
+            <!--            <p>-->
+            <!--                As a final intuition point, lets focus on the example below:-->
+            <!--                <p class="example">Net is used for catching fish, only if</p>-->
+            <!--                as soon as one hears the prompt sentence they have a "picture" in mind that contains the two explicitly mentioned elements: net, and fishing; and among other things some key elements such as: sea (water), boat, etc.-->
+            <!--                There are a lot of implicit assumptions associated with each one of the elements that can make "the picture" possible or impossible.-->
+            <!--                Among those, some are associated directly with the explicit and key elements that are the focus of this study.-->
+            <!--                However, some of the assumptions are indirectly related to the explicit and key elements through a third non-key element such as "earth" or "weather", and the effect that these non-key elements have on the key or explicit elements.-->
+            <!--                In this study, we ask you to think about you answers in term of the explicit and key elements and not the non-key elements; for example, one may think of storm as a factor that makes using net for fishing impossible, however it is related to the non-key element and its-->
+            <!--            we are looking for the-->
+
+            <!--            </p>-->
         </detailed-instructions>
         <negative-example>
             <div class="emph-box">
@@ -248,22 +299,22 @@
 
         <positive-example>
             <div class="emph-box">
-            The net is used for catching fish only if<br>
-            -> it is the right size.<i class="fa fa-check-circle" style="color:green"></i>
+                The net is used for catching fish only if<br>
+                -> it is the right size.<i class="fa fa-check-circle" style="color:green"></i>
             </div>
         </positive-example>
 
         <negative-example>
             <div class="emph-box">
-            The net is used for catching fish unless<br>
-            -> the boat is sinking.<i class="fa fa-window-close" style="color:darkred"></i> (Do Not Overthink)
+                The net is used for catching fish unless<br>
+                -> the boat is sinking.<i class="fa fa-window-close" style="color:darkred"></i> (Do Not Overthink)
             </div>
         </negative-example>
 
         <negative-example>
             <div class="emph-box">
-            The net is used for catching fish unless<br>
-            -> the net is broken.<i class="fa fa-window-close" style="color:darkred"></i> (Be Specific)
+                The net is used for catching fish unless<br>
+                -> the net is broken.<i class="fa fa-window-close" style="color:darkred"></i> (Be Specific)
             </div>
         </negative-example>
 
@@ -283,27 +334,34 @@
         <negative-example>
             <div class="emph-box">
                 The net is used for catching fish unless
-                -> it is illegal to do fishing.<i class="fa fa-window-close" style="color:darkred"></i> (Do Not Overthink)
+                -> it is illegal to do fishing.<i class="fa fa-window-close" style="color:darkred"></i> (Do Not
+                Overthink)
             </div>
         </negative-example>
 
     </crowd-instructions>
     <crowd-modal
-        link-text = "Why we do this study?"
-        link-type = "button">
+            link-text="Why we do this study?"
+            link-type="button">
         <p>
             We are conducting an academic study on the implicit expectations people have about everyday phenomenons
             (Common Sense). We need to understand your mental image about the common tasks and usages of everyday
             objects, by asking about the conditions that enable or disable the task or the usage of that specific
-            object. for more info please refer to <a href="https://www.darpa.mil/program/machine-common-sense">this link</a>.
+            object. for more info please refer to <a href="https://www.darpa.mil/program/machine-common-sense">this
+            link</a>.
         </p>
     </crowd-modal>
 
     <br>
     <div class="instruction-box">
         <br>
-        Complete the prompt sentence with the first answer that comes to your mind.<br>And remember: <br>
-        <span>1. Don't use pronouns</span>    <span>2. don't overthink</span>    <span>3. Be specific</span>    <span>4. Avoid Negatives</span>
+        <strong>Please read the detailed instructions and examples before you begin.</strong><br>
+        Complete the following prompts with the first thing that comes to your mind.<br>
+        Remember: <br>
+        <span>1. Do not use pronouns</span>
+        <span>2. Do not overthink!</span>
+        <span>3. Be specific</span>
+        <span>4. Avoid negatives</span>
         <br>
         <br>
     </div>
@@ -313,7 +371,7 @@
            publish a batch with an input file containing multiple contexts and intents -->
     <div>
         <div class="prompt-box" id="questionbox1">
-            <p>A canvas is used for painting on unless</p>
+            <p>${sentence1} ...</p>
             <crowd-input class="crowd-input" name="response1" auto-focus="true"
                          placeholder="your response" required
                          auto-validate="true" allowed-pattern="[a-zA-z\.\!\, ]"
@@ -322,31 +380,33 @@
         </div>
         <crowd-input name="mytimes1" id="mytimes1" placeholder="" disabled="true"></crowd-input>
     </div>
-    <crowd-card>
-    </crowd-card>
     <div>
         <div class="prompt-box" id="questionbox2">
-            <p>A chess board is used for play chess unless</p>
+            <p>${sentence2} ...</p>
             <crowd-input name="response2" auto-focus="true"
                          placeholder="your response" required
                          auto-validate="true" allowed-pattern="[a-zA-z\.\!\, ]"></crowd-input>
         </div>
-        <crowd-input name="mytimes2" id="mytimes1" placeholder="" disabled="true"></crowd-input>
+        <crowd-input name="mytimes2" id="mytimes2" placeholder="" disabled="true"></crowd-input>
     </div>
 
 </crowd-form>
 
 <script>
-    var max_questions=2
+    var max_questions = 2
     var first_click = Array(max_questions).fill(0.0)
+    var last_click = Array(max_questions).fill(0.0)
+
     function getTimeStamp() {
         var now = new Date();
         return ((now.getMonth() + 1) + '/' + (now.getDate()) + '/' + now.getFullYear() + " " + now.getHours() + ':'
             + ((now.getMinutes() < 10) ? ("0" + now.getMinutes()) : (now.getMinutes())) + ':' + ((now.getSeconds() < 10) ? ("0" + now
                 .getSeconds()) : (now.getSeconds())));
-    };
+    }
+
     function createlog(i) {
-        var textID="mytimes"+i.toString()
+        var textID = "mytimes" + i.toString()
+
         function logTimeStamps() {
             var time = getTimeStamp()
             var message = document.getElementById(textID).value;
@@ -354,8 +414,10 @@
             // alert(newMessage)
             document.getElementById(textID).value = newMessage;
         }
+
         return logTimeStamps
     }
+
     // Array(max_questions).forEach(
     //     function (i) {
     //         var n = i+1
@@ -363,7 +425,9 @@
     //         console.log(n)
     //     }
     // )
+    document.getElementById("questionbox1").onclick = createlog(1)
+    document.getElementById("questionbox2").onclick = createlog(2)
     // // ["questionbox1"].onclick = logTimeStamps;
-    // document.getElementById("mainform").onsubmit = createlog(max_questions);
+    document.getElementById("mainform").onsubmit = createlog(2);
 
 </script>
