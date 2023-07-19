@@ -1,14 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.ad7beef5.css",
-    "main.js": "/static/js/main.3a88316c.js",
+    "main.js": "/static/js/main.70e0899d.js",
     "static/media/Vitruvianischer_Mann.png": "/static/media/Vitruvianischer_Mann.eb614f7a409830340fba.png",
     "static/media/DSBox_GSSISI_poster_H.jpg": "/static/media/DSBox_GSSISI_poster_H.a193ab84e6771191fe51.jpg",
     "static/media/adepth_res.png": "/static/media/adepth_res.935131894d110d0a73cd.png",
     "static/media/hls.jpg": "/static/media/hls.0617e6f1fee2eb136766.jpg",
     "static/media/PInKS_Overview.jpg": "/static/media/PInKS_Overview.e3cf5364cf89bd873e6d.jpg",
+    "static/media/architecture.png": "/static/media/architecture.a864dd3008725434decc.png",
+    "static/media/trivia_main.png": "/static/media/trivia_main.da9eb48d536807cfe255.png",
     "static/media/HANSdemoGUI.png": "/static/media/HANSdemoGUI.722284b65e7340326068.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/pipeline.png": "/static/media/pipeline.83550d3092c8a8c4ca50.png",
     "static/media/UW.png": "/static/media/UW.151d62994c1d7ccbcb25.png",
     "static/media/blokus.jpg": "/static/media/blokus.3509c33b43961cf02ac4.jpg",
     "static/media/tbu.png": "/static/media/tbu.323264faa39ee1943025.png",
@@ -24,6 +27,8 @@
     "static/media/Music.png": "/static/media/Music.70e715b942b4d4a7a7d6.png",
     "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/overview.png": "/static/media/overview.7a6bb44c8b3218e8bfba.png",
+    "static/media/intro.png": "/static/media/intro.3c197757b1242f5f3ecb.png",
     "static/media/blokus_3.png": "/static/media/blokus_3.1aeaeab284b9bff6433c.png",
     "static/media/data_creation_overview.png": "/static/media/data_creation_overview.e406f5ace3d57cc5f73d.png",
     "static/media/hls_3.png": "/static/media/hls_3.ab0749e3d8c522f95717.png",
@@ -72,10 +77,10 @@
     "static/media/Oracle.png": "/static/media/Oracle.b3c12b7a1d63ae633567.png",
     "index.html": "/index.html",
     "main.ad7beef5.css.map": "/static/css/main.ad7beef5.css.map",
-    "main.3a88316c.js.map": "/static/js/main.3a88316c.js.map"
+    "main.70e0899d.js.map": "/static/js/main.70e0899d.js.map"
   },
   "entrypoints": [
     "static/css/main.ad7beef5.css",
-    "static/js/main.3a88316c.js"
+    "static/js/main.70e0899d.js"
   ]
 }
