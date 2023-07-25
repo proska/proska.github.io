@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ad7beef5.css",
-    "main.js": "/static/js/main.70e0899d.js",
+    "main.js": "/static/js/main.034c0510.js",
     "static/media/Vitruvianischer_Mann.png": "/static/media/Vitruvianischer_Mann.eb614f7a409830340fba.png",
     "static/media/DSBox_GSSISI_poster_H.jpg": "/static/media/DSBox_GSSISI_poster_H.a193ab84e6771191fe51.jpg",
     "static/media/adepth_res.png": "/static/media/adepth_res.935131894d110d0a73cd.png",
@@ -77,10 +77,10 @@
     "static/media/Oracle.png": "/static/media/Oracle.b3c12b7a1d63ae633567.png",
     "index.html": "/index.html",
     "main.ad7beef5.css.map": "/static/css/main.ad7beef5.css.map",
-    "main.70e0899d.js.map": "/static/js/main.70e0899d.js.map"
+    "main.034c0510.js.map": "/static/js/main.034c0510.js.map"
   },
   "entrypoints": [
     "static/css/main.ad7beef5.css",
-    "static/js/main.70e0899d.js"
+    "static/js/main.034c0510.js"
   ]
 }
