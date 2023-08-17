@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ad7beef5.css",
-    "main.js": "/static/js/main.034c0510.js",
+    "main.js": "/static/js/main.f7fd0a62.js",
     "static/media/Vitruvianischer_Mann.png": "/static/media/Vitruvianischer_Mann.eb614f7a409830340fba.png",
     "static/media/DSBox_GSSISI_poster_H.jpg": "/static/media/DSBox_GSSISI_poster_H.a193ab84e6771191fe51.jpg",
     "static/media/adepth_res.png": "/static/media/adepth_res.935131894d110d0a73cd.png",
@@ -36,8 +36,8 @@
     "static/media/blokus_4.png": "/static/media/blokus_4.7625cc4034c8a6ea58f0.png",
     "static/media/dsbox_1.png": "/static/media/dsbox_1.761bb8f4be57bf1abecb.png",
     "static/media/Painting_SVD.png": "/static/media/Painting_SVD.35ed415adce3f47815ad.png",
+    "static/media/Ehsan_Eric__Qasemi_CV.pdf": "/static/media/Ehsan_Eric__Qasemi_CV.43d8a240d569fcae8e8f.pdf",
     "static/media/extracteds.png": "/static/media/extracteds.db4d64fad477f75061fa.png",
-    "static/media/Ehsan_Eric__Qasemi_CV.pdf": "/static/media/Ehsan_Eric__Qasemi_CV.ee9a333094a237d71a14.pdf",
     "static/media/hls_tab_2.png": "/static/media/hls_tab_2.1c44380ad9b2a84cda48.png",
     "static/media/Painting_Problem.png": "/static/media/Painting_Problem.40d8949bde219b92c8d3.png",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
@@ -52,35 +52,38 @@
     "static/media/cq_overview_mini.png": "/static/media/cq_overview_mini.4fdeec34137af6704df9.png",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/Painting.png": "/static/media/Painting.5ae162d54d84b8416d85.png",
+    "static/media/unload.jpg": "/static/media/unload.f214b326342096efcec3.jpg",
     "static/media/cskg_logo.png": "/static/media/cskg_logo.d915e2eed4392e002ee0.png",
     "static/media/dsbox_4.png": "/static/media/dsbox_4.c529c1ce060fc7cfd7b5.png",
     "static/media/USC.png": "/static/media/USC.c00a86167491f267411d.png",
     "static/media/G_img.png": "/static/media/G_img.6c81d78bbe35a8e261bd.png",
     "static/media/HSM.png": "/static/media/HSM.074cb840a8efc5eaeb9c.png",
+    "static/media/advisor.jpg": "/static/media/advisor.e128a1b554878683ad98.jpg",
     "static/media/dsbox_tab_3.png": "/static/media/dsbox_tab_3.15b81f3c903cb9f53d52.png",
     "static/media/cskg_size.png": "/static/media/cskg_size.53e988332f5902ff88cd.png",
     "static/media/air_res.png": "/static/media/air_res.87a098c29fc6810a41bd.png",
     "static/media/dsbox_2.png": "/static/media/dsbox_2.41a2254eaf1ee344688d.png",
-    "static/media/Ehsan_Eric__Qasemi_resume.pdf": "/static/media/Ehsan_Eric__Qasemi_resume.601033a46f76e6c0d288.pdf",
     "static/media/tableU.jpg": "/static/media/tableU.6accc485fda2cb3320b5.jpg",
     "static/media/dsbox_5.png": "/static/media/dsbox_5.8aec7ce52c20a40df19e.png",
     "static/media/hls_5.png": "/static/media/hls_5.dcf5d38c60429a455777.png",
     "static/media/HANS-arch1.png": "/static/media/HANS-arch1.c7746eee1e1a643e9929.png",
     "static/media/dsbox_tab_4.png": "/static/media/dsbox_tab_4.38ed3e1db5290c0f4614.png",
     "static/media/dsbox_tab_1.png": "/static/media/dsbox_tab_1.84e9000baaaebb96a335.png",
+    "static/media/Ehsan_Eric__Qasemi_resume.pdf": "/static/media/Ehsan_Eric__Qasemi_resume.9102cdba29b2e1089e78.pdf",
     "static/media/dsbox_6.png": "/static/media/dsbox_6.36e120b64d3bdbe28f53.png",
     "static/media/dsbox.png": "/static/media/dsbox.1a76d1f5f56a7510c297.png",
     "static/media/dsbox_7.png": "/static/media/dsbox_7.bb584ae40367614403e4.png",
     "static/media/adepthLR.jpg": "/static/media/adepthLR.d9cffe6fa723c38dc328.jpg",
     "static/media/UT.png": "/static/media/UT.a0ce7dde14fc16430650.png",
     "static/media/TMO.png": "/static/media/TMO.5571972eeb54fee99da2.png",
+    "static/media/heatwave_logo.png": "/static/media/heatwave_logo.029c678ba4433e0d292a.png",
     "static/media/Oracle.png": "/static/media/Oracle.b3c12b7a1d63ae633567.png",
     "index.html": "/index.html",
     "main.ad7beef5.css.map": "/static/css/main.ad7beef5.css.map",
-    "main.034c0510.js.map": "/static/js/main.034c0510.js.map"
+    "main.f7fd0a62.js.map": "/static/js/main.f7fd0a62.js.map"
   },
   "entrypoints": [
     "static/css/main.ad7beef5.css",
-    "static/js/main.034c0510.js"
+    "static/js/main.f7fd0a62.js"
   ]
 }
